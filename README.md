@@ -41,7 +41,7 @@ Make sure you have the following prerequisites installed:
 2. Change directory to the project folder:
 
    ```bash
-   cd house-price-prediction
+   cd House-price-prediction-NN
    ```
 
 3. Install the required Python libraries:
