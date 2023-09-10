@@ -11,23 +11,6 @@ This repository contains code and data for a project that predicts house prices 
 
 ---
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Data](#data)
-- [Data Preprocessing](#data-preprocessing)
-- [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Model Creation](#model-creation)
-- [Model Training](#model-training)
-- [Evaluation](#evaluation)
-- [Results](#results)
-
----
-
 ## Introduction
 
 This project aims to predict house prices using a neural network model. It includes data preprocessing, visualization of data relationships, model creation, training, and evaluation. The code is written in Python and uses popular libraries such as Pandas, Seaborn, Matplotlib, and TensorFlow.
