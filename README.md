@@ -25,8 +25,6 @@ This repository contains code and data for a project that predicts house prices 
 - [Model Training](#model-training)
 - [Evaluation](#evaluation)
 - [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -89,24 +87,38 @@ The dataset used in this project is `kc_house_data.csv`, which contains informat
 
 The data preprocessing steps include loading the dataset, removing unnecessary columns, and filtering rows based on correlation values.
 
+![image](https://github.com/nenomg/House-price-prediction-NN/assets/105873794/c309baa8-cd03-4f25-b264-76f467cff4c9)
+
+This is the correlation matrix for all of the data, we're going to remove every column that has a correlation of 0.1 or less with the price variable. The resultant matrix is the folowing:
+
+![image](https://github.com/nenomg/House-price-prediction-NN/assets/105873794/aaae3516-7bc0-43ca-a62c-8be37fae8303)
+
+
 ---
 
 ## Exploratory Data Analysis
 
-This section includes functions for visualizing the correlation matrix and scatter plots of house prices.
+This section includes functions for visualizing scatter plots of house prices.
+
+![image](https://github.com/nenomg/House-price-prediction-NN/assets/105873794/ea1a9086-dbca-4d5b-ba1a-39aef0352187)
+
 
 ---
 
 ## Model Creation
 
 A neural network model is created using TensorFlow's Keras API. It includes an input layer, hidden layers, and an output layer for regression.
+
 ![image](https://github.com/nenomg/House-price-prediction-NN/assets/105873794/713b4102-2493-4a09-a61c-bdd94e98dde0)
 
 ---
 
 ## Model Training
 
-The model is trained using the training data, and the training loss is monitored. The trained model is used to make predictions.
+The model is trained using the training data, and the training loss is monitored. The trained model is used to make predictions. We extract the data for test and train, then we scale the values.
+
+![image](https://github.com/nenomg/House-price-prediction-NN/assets/105873794/5e7b8f3d-0934-41c9-8d57-7cc53c92cb64)
+
 
 ---
 
@@ -114,23 +126,40 @@ The model is trained using the training data, and the training loss is monitored
 
 The evaluation section includes visualizations of the training and validation loss during model training, as well as scatter plots comparing actual and predicted house prices.
 
+### 10 EPOCHS
+
+![image](https://github.com/nenomg/House-price-prediction-NN/assets/105873794/d0a10c77-953a-450c-81c0-372235bf9c99)
+
+
+### 50 EPOCHS
+
+![image](https://github.com/nenomg/House-price-prediction-NN/assets/105873794/1006307f-c351-4871-8634-95118cd083f1)
+
+
+### 200 EPOCHS
+
+![image](https://github.com/nenomg/House-price-prediction-NN/assets/105873794/ac6efe8b-739c-4152-89c4-d9ee35645266)
+
+
 ---
 
 ## Results
 
 The project's results are presented in the form of visualizations and predictions made by the trained neural network model.
 
----
+### 10 EPOCHS
 
-## Contributing
+![image](https://github.com/nenomg/House-price-prediction-NN/assets/105873794/3e53086b-f63b-438e-b08a-5a1b9753916e)
 
-Contributions are welcome! If you have suggestions, bug reports, or want to contribute to this project, please open an issue or create a pull request.
 
----
+### 50 EPOCHS
 
-## License
+![image](https://github.com/nenomg/House-price-prediction-NN/assets/105873794/82a73bf2-1358-4a92-ac58-3d509bd8982f)
 
-This project is licensed under the [MIT License](LICENSE).
+
+### 200 EPOCHS
+
+![image](https://github.com/nenomg/House-price-prediction-NN/assets/105873794/2ff12a19-743f-4020-b7c8-45cefbbf9d5e)
 
 ---
 
