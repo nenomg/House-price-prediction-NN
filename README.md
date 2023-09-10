@@ -35,7 +35,7 @@ Make sure you have the following prerequisites installed:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/house-price-prediction.git
+   git clone https://github.com/nenomg/House-price-prediction-NN.git
    ```
 
 2. Change directory to the project folder:
